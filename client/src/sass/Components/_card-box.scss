@@ -1,0 +1,29 @@
+.card-box {
+    $this: &;
+    background-color: rgba($color: $color-white, $alpha: .95);
+    font-size: 1.5rem;
+    padding: 2rem 2rem 4rem 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: 0 1.5rem 4rem rgba($color: $color-primary-dark, $alpha: 1.0);
+    transition: all .2s;
+
+    & &__icon {
+        display: inline-block;
+        font-size: 5rem;
+        background: linear-gradient(45deg, $color-primary-1, $color-secondary-1);
+        color: transparent;
+        background-clip: text;
+    }
+    & &__name {
+        height: 7rem;
+    }
+    & &__text {
+        height: 5rem;
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-1.2rem) scale(1.05);
+    }
+}

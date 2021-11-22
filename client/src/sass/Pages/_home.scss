@@ -1,0 +1,81 @@
+.section-container {
+    padding: 2rem 4rem;
+    margin-bottom: 6rem;
+}
+.section-header {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, $color-primary-1, $color-secondary-1);
+        border-radius: 0 0 50% 50%/0 0 100% 100%;
+        transform: scaleX(1.5);
+    }
+    .banner-content {
+        position: relative;
+        z-index: 1;
+        margin: 0 auto;
+        max-width: 900px;
+        text-align: center;
+        h2 {
+            font-size: 3rem;
+            color: $color-grey-light;
+            
+        }
+        p {
+            font-size: 1.2rem;
+            color: $color-grey-light;
+        }
+    }
+}
+.section-about {
+    background-color: $color-grey-light;
+    margin-top: -10rem;
+    padding: 15rem 0;
+    height: 65rem;
+}
+.section-card {
+    background-image: linear-gradient(to right bottom,
+    rgba($color-primary-1, .8),
+    rgba($color-secondary-1, .8)), url("../assets/images/business-success.jpg");
+    background-size: cover;
+    padding: 5rem 0;
+    clip-path: ellipse(70% 50% at 50% 50%);
+
+    &__title {
+        margin: 2rem 0;
+        font-size: 2rem;
+        text-align: center;
+        color: $color-text-white;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+.section-flip-card {
+    background-color: $color-grey-light;
+    margin-top: -10rem;
+    padding: 15rem 0;
+}
+
+.section-testimonials {
+    position: relative;
+}
+
+.section-footer {
+    background-color: $color-grey-light;
+    padding: 5rem 0;
+    &__title {
+        margin: 2rem 0;
+    }
+}

@@ -1,0 +1,32 @@
+// **************************************************
+// ** __Button
+// **************************************************
+.button {
+    $this : &;
+    font-size: 1rem;
+    margin: .25rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    &#{$this}-cart {
+        background-color: $color-y1;
+    }
+    &#{$this}-close{
+        background-color: $color-text-grey;
+    }
+    &#{$this}-primary-red  {
+        background-color: $color-primary-1;
+    }
+    &#{$this}-secondary-1 {
+        background-color: $color-secondary-1;
+    }
+    &#{$this}-secondary-2 {
+        background-color: $color-secondary-2;
+    }
+    &#{$this}-primary-2 {
+        background-color: $color-primary-2;
+    }
+    &#{$this}-primary-green {
+        background-color: $color-tertiary-1;
+    }
+}
